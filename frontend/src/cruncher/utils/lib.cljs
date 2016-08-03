@@ -223,5 +223,5 @@
   "Convert String to Integer."
   [s]
   (let [converted (js/parseInt s)]
-    (when-not (js/isNaN converted)
-      converted)))
+    (is-not (js/isNaN converted)
+      converted )))
